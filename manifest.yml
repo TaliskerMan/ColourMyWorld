@@ -1,0 +1,20 @@
+modules:
+  macro:
+    - key: cmw-hello-world
+      resource: main
+      resolver:
+        function: resolver
+      title: CMW
+      description: Inserts Hello world!
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  runtime:
+    name: nodejs24.x
+    memoryMB: 256
+    architecture: arm64
+  id: ari:cloud:ecosystem::app/1cf13d75-7d10-462c-b21b-55ba98c3fee0
