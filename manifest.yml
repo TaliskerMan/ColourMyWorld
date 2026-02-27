@@ -6,6 +6,7 @@ modules:
         function: resolver
       title: Colour My World
       description: Insert a custom 24-color status button
+      icon: resource:icon-resource;cmw.png
       layout: inline
       config:
         resource: main
@@ -16,6 +17,8 @@ modules:
 resources:
   - key: main
     path: static/hello-world/build
+  - key: icon-resource
+    path: data
 app:
   runtime:
     name: nodejs24.x
