@@ -4,8 +4,12 @@ modules:
       resource: main
       resolver:
         function: resolver
-      title: CMW
-      description: Inserts Hello world!
+      title: Colour My World
+      description: Insert a custom 24-color status button
+      layout: inline
+      config:
+        resource: main
+        viewportSize: medium
   function:
     - key: resolver
       handler: index.handler
